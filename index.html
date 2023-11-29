@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> bank login form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
+        <style>
+            * {
+                font-family: 'Roboto', sans-serif;
+            }
+        </style>
+    </head>
+    <body class="bg-gray-300">
+        <header>
+            <h1 class="text-5xl text-center mt-6 text-slate-600">Welcome to your 
+            <span class="font-semibold text-red-400">City Bank</span></h1>
+        </header>
+        <main>
+            <section class="bg-blue-100 w-9/12 mx-auto mt-10 p-10 rounded-lg shadow ">
+                <h1 class="text-3xl font-semibold text-slate-700  pb-5">Please Login</h1>
+                <div>
+                    <input class="block w-9/12 mb-5 px-2 py-2 outline-none" type="email"  id="user-email" placeholder="Give your email">
+                    <input class="block w-9/12 mb-5 px-2 py-2 outline-none" type="password" name="" id="user-password" placeholder="Password">
+                    <button id="btn-submit" class="bg-amber-600 px-5 font-semibold text-white rounded-lg py-2 hover:bg-sky-700">Submit</button>
+                </div>
+            </section>
+            <!-- information -->
+            <section class="bg-blue-100 w-9/12 mx-auto mt-10 rounded-lg shadow p-10">
+                <h1 class="text-center text-4xl text-red-400">Instruction</h1>
+                <h2 class="mt-6 text-xl text-slate-600">Please login with this <span class="text-red-400 text-2xl">Email</span> and
+                <span class="text-red-400 text-2xl">Password</span></h2>
+                <!-- email information -->
+                <div>
+                    <div>
+                        <h1 class="mt-4 text-xl text-red-400">Email:</h1>
+                        <h3 class=" text-xl text-violet-500"><span class="text-xl text-orange-700">&#8859;</span> tonmoybdinfo@gmail.com</h3>
+                    </div>
+                    <h1 class="mt-4 text-xl text-red-400">Password:</h1>
+                    <h3 class=" text-xl text-violet-500"><span class="text-xl text-orange-700">&#8859;</span> tonmoybdinfo</h3>
+                </div>
+                <!-- div border  -->
+                <div class=" w-9/12 mx-auto mt-10 border border-blue-700"></div>
+                <!-- alert -->
+                <p class="mt-4"><span class=" text-xl text-orange-700">&#8888;</span>
+                If you don't use this <span class="text-red-400 text-xl">Email</span> and <span class="text-red-400 text-xl">Password</span> you 
+                can't get access.!! It will says <span class="text-red-400 text-xl">Invalid User</span>
+                </p>
+            </section>
+        </main>
+        <script src="/js/login.js"></script>
+    </body>
+</html>

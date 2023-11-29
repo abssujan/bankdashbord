@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bank Dashbord</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
+        <style>
+            * {
+                font-family: 'Roboto', sans-serif;
+            }
+        </style>
+    </head>
+    <body class="bg-gray-300">
+        <header>
+            <h1 class="text-5xl text-center mt-6 text-slate-600">Welcome to your 
+            <span class="font-semibold text-violet-500">DashBord</span></h1>
+        </header>
+        <main>
+            <section>
+                <div class="grid grid-cols-3  w-9/12 mx-auto text-white mt-10">
+                    <!-- box-1 -->
+                    <div class="bg-gray-600 shadow-lg w-11/12 xl:w-9/12 rounded-lg p-6">
+                        <h1 class="text-2xl">Deposit</h1>
+                        <h2 class="text-xl">$<span id="deposit-total">00</span></h2>
+                    </div>
+                    <!-- box-2 -->
+                    <div class="bg-pink-400 shadow-lg w-11/12 xl:w-9/12 rounded-lg p-6">
+                        <h1 class="text-2xl">withdraw</h1>
+                        <h2 class="text-xl">$<span id="withdraw-total">00</span></h2>
+                    </div>
+                    <!-- box-1 -->
+                    <div class="bg-blue-400 shadow-lg w-11/12 xl:w-9/12 rounded-lg p-6">
+                        <h1 class="text-2xl">Balanace</h1>
+                        <h2 class="text-xl">$<span id="balance-total">1240</span></h2>
+                    </div>
+                </div>
+            </section>
+            <!-- deposit and withdraw -->
+            <section>
+                <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto  mt-10">
+                    <!-- box-1 -->
+                    <div class="bg-green-500 shadow-lg w-11/12 xl:w-9/12 rounded-lg p-6 xl:ml-10">
+                        <h1 class="text-2xl pb-5 text-white">Please Deposit</h1>
+                        <input class="block w-9/12 mb-5 px-2 py-2 outline-none" type="text"  id="deposit-filed" placeholder="$ Ammount you want deposit">
+                    <button id="btn-depsoit" class="bg-amber-600 px-5 font-semibold text-white rounded-lg py-2 hover:bg-sky-700">deposit</button>
+                    </div>
+                    <!-- box-2 -->
+                    <div class="bg-violet-400 shadow-lg w-11/12 xl:w-9/12 rounded-lg p-6">
+                        <h1 class="text-2xl pb-5 text-white">Please withdraw</h1>
+                        <input class="block w-9/12 mb-5 px-2 py-2 outline-none" type="text"  id="withdraw-filed" placeholder="$ Ammount you want withdraw">
+                        <button id="btn-withdraw" class="bg-amber-600 px-5 font-semibold text-white rounded-lg py-2 hover:bg-sky-700">withdraw</button>
+                    </div>
+                </div>
+            </section>
+             <!-- information -->
+             <section class="bg-blue-100 w-9/12 mx-auto mt-10 rounded-lg shadow p-10">
+                <h1 class="text-center text-4xl text-red-400">Instruction</h1>
+                
+                <!-- div border  -->
+                <div class=" w-9/12 mx-auto mt-2 border border-blue-700"></div>
+                <!-- alert -->
+                <p class="mt-4"><span class=" text-xl text-orange-700">&#8888;</span>
+                I want to create a <span class="text-red-400 text-xl">Bank</span> deposit and <span class="text-red-400 text-xl">withdraw</span> Dashbord.
+                </p>
+                <p class="mt-2"><span class=" text-xl text-orange-700">&#8888;</span>
+                Here you can <span class="text-red-400 text-xl">Deposit</span> Your money. When you <span class="text-red-400 text-xl">Deposit</span>
+                your money it will add in <span class="text-red-400 text-xl">Deposit</span> box in above and It will
+                also add with <span class="text-red-400 text-xl">Balanace</span> box.
+                <p class="mt-2"><span class=" text-xl text-orange-700">&#8888;</span>
+                Here you can <span class="text-red-400 text-xl">withdraw</span> Your money. When you <span class="text-red-400 text-xl">withdraw</span>
+                your money it will add in <span class="text-red-400 text-xl">withdraw</span> box in above and It will
+                also <span class="text-red-400 text-xl">minus</span> with your <span class="text-red-400 text-xl">Balanace</span> box.
+                </p>
+                <p class="mt-2"><span class=" text-xl text-orange-700">&#8888;</span>
+                I made some <span class="text-red-400 text-xl">Validation</span> here. You can't use 
+                <span class="text-red-400 text-xl">String</span> If you use <span class="text-red-400 text-xl">String</span> it will Give
+                you <span class="text-red-400 text-xl">alert</span>. You can try with any <span class="text-red-400 text-xl">String</span>
+                If you want.
+                </p>
+                <p class="mt-2"><span class=" text-xl text-orange-700">&#8888;</span>
+                Another thing I do here. If you want <span class="text-red-400 text-xl">withdraw</span> your 
+                money more than you have in <span class="text-red-400 text-xl">Balanace</span> box it will Give
+                you an <span class="text-red-400 text-xl">alert</span>. You can try this.
+                </p>
+            </section>
+        </main>
+        <script src="/js/utility.js"></script>
+        <script src="/js/deposit.js"></script>
+        <script src="/js/withdraw.js"></script>
+    </body>
+</html>
